@@ -1,0 +1,21 @@
+{
+  "name": "ytdl",
+  "version": "1.0.0",
+  "description": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start": "concurrently \"nodemon index.js\" \"npx tailwindcss -i ./public/input.css -o ./public/output.css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "tailwindcss": "^3.3.3"
+  }
+}

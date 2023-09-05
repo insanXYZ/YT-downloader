@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YT-downloader</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <div class="flex flex-col w-screen h-screen">
+    <div class="h-1/6 bg-white shadow-lg flex justify-center">
+        <div class="w-2/3 flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <img src="yt.png" class="w-16">
+            <p class="font-mono text-2xl">YT-downloader</p>
+          </div>
+          <a href="https://github.com/insanXYZ">
+            <img src="github.png" alt="image" class="w-14">
+          </a>
+        </div>
+    </div>
+    <div class="h-5/6 bg-gray-300">
+      <form action="/" method="POST" class="flex flex-col gap-10 justify-center items-center w-2/3 m-auto h-full">
+        <h1 class="text-4xl font-semibold">Masukkan link youtube dibawah sini </h1>
+        <div class="flex w-full gap-5 box-border">
+          <input type="text" class="w-full py-5 px-2 text-xl rounded-md" autofocus placeholder="https://www.youtube.com/watch?v=..." name="url" required>
+          <select name="resolusi" id="resolusi" class="px-2 text-xl rounded-md">
+            <option value="highest">resolusi tinggi</option>
+            <option value="lowest">resolusi rendah</option>
+          </select>
+          <button type="submit" class="bg-green-400 rounded-md text-white px-2 text-xl">Download</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
